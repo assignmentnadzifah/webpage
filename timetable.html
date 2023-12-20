@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head
+
+    <title>My Personal Blog</title>
+
+ <!--back ground designing -->
+     
+    <style>
+     
+     body {
+	    background-image: url('image/background1.png');
+            background-size: cover;
+	    font-family: garamond;
+     }
+	h1 {
+		text-align:center;
+	}
+		
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #DDEAD1;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: underline overline dotted black;
+        }
+
+        li a:hover {
+            background-color: #C7DDB5;
+        }
+
+        .logo {
+            max-height: 60px;
+            margin-right: 0px; 
+	}
+	.icon {
+            max-height: 40px;
+            margin-right: 0px; 
+	}
+
+	.social-icon {
+            width: 30px; 
+            height: 30px; 
+            margin-right: 5px; 
+            vertical-align: middle;
+        }
+	table{
+		boarder: 4px;
+		boarder-collapse: collapse;
+		width: 100%
+	}
+		
+	th,td{
+		boarder:1px solid black;
+		padding:8px;
+		text-align: center;
+	}
+	
+	th{
+		background-color:#89CFF0;
+	}
+	tr{
+		background-color:#DDEAD1;
+	}
+
+	.gallery{
+		border: 1px solid black;
+	}
+
+	.gallery:hover{
+		border: 1px solid #777;
+	}
+	
+	.gallery img{
+		width: 100%;
+		height: auto;
+	}
+
+	.desc{
+		padding: 15px;
+		text-align: center;	
+	}
+	.footer{
+		height: 40px;
+		background-color:#DDEAD1;
+		border-radius: 5px 5px 5px;
+	}
+	
+	.footer h2{
+		padding:5px;
+		text-align:center;	
+	}
+
+	.footer h2 a{
+		text-decoration:none;color:black;
+	}
+	
+    </style>
+</head>
+<body>
+<!-- creating navigation bar-->
+<nav>
+    <ul>
+        <li><a href="index.html"><img src="image/logo.png" alt="Logo" class="logo"></a></li>
+        <li><a href="about.html" >About Me</a></li>
+	<li><a href="social.html">Social Media</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+	<li><a href="links.html">UiTM Website links</a></li>
+	<li><a href="https://www.youtube.com/" target="_blank"><img src="image/yt.png" alt="YouTube" class="icon"></a></li>
+	<li><a href="https://www.instagram.com/" target="_blank"><img src="image/Instagram.png" alt="Instagram" class = "icon"></a></li>
+        <li><a href="signin.html">Sign IN</a></li>
+	<li><a href="signout.html">Sign Out</a></li>
+	
+    </ul>
+</nav>
+<!-- creating time table-->
+
+<h2> This is my Time table for this semester</h2>
+
+<div>
+
+	<table>
+		<tr>
+			<th colspan = "6">Time Table</th>
+		</tr>
+
+		<tr>
+			<th>Time/Day</th>
+			<th> 8:00 - 10:00</th>
+			<th> 10:00 - 12:00</th>
+			<th> 12:00 - 14:00</th>
+			<th> 14:00 - 16:00</th>
+			<th> 16:00 - 18:00</th>
+		</tr>
+
+		<tr>
+			<th> Monday</th>
+			<td> </td>
+			<td> <a href="#csc404">CSC 404</a></td>
+			<td> </td>
+			<td> </td>
+			<td> <a href ="#itt450">ITT 450</a></td>
+		</tr>
+
+		<tr>
+			<th> Tuesday</th>
+			<td> <a href="elc510">ELC 501</a></td>
+			<td> </td>
+			<td> </td>
+			<td> <a href="tac451">TAC 451</a></td>
+			<td> <a href="csc574">CSC 574</a></td>
+		</tr>
+
+		<tr>
+			<th> Wednesday</th>
+			<td> <a href="itt450">ITT 450</a></td>
+			<td> <a href="ctu554">CTU 554</a></td>
+			<td> </td>
+			<td> </td>
+			<td> <a href="ict450">ICT 450</a></td>
+		</tr>
+	
+		<tr>
+			<th> Thursday</th>
+			<td> <a href="csc404">CSC 404</a></td>
+			<td> </td>
+			<td> <a href="csc574">CSC 574</a></td>
+			<td> </td>
+			<td> </td>
+		</tr>
+
+		<tr>
+			<th> Friday</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td> <a href="ict450">ICT 450</a></td>
+		</tr>
+			
+	</table>
+</div>
+
+<p></p>
+<p></p>
+
+<div id="csc404">
+
+	<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Programming II </td>
+			<td> Sir Amir Khan </td>
+	</table>
+
+</div>
+	
+<p></p>
+<p></p>
+		
+<div id="csc574">
+
+<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Dynamic Web Application Development </td>
+			<td> Sir Azizian and Madam Nur Aina Khadijah </td>
+	</table>
+
+</div>	
+
+<p></p>
+<p></p>	
+
+<div id="ctu554">
+
+<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Values and Civilization II </td>
+			<td> Sir Afandi </td>
+	</table>
+
+</div>		
+
+<p></p>
+<p></p>
+
+<div id="elc501">
+
+<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> English for Critical Academic Reading </td>
+			<td> Madam Noor Azhana </td>
+	</table>
+
+</div>	
+
+<p></p>
+<p></p>
+
+<div id="ict450">
+
+	<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Database Design and Development </td>
+			<td> Dr Rozianawaty </td>
+	</table>
+
+</div>
+
+<p></p>
+<p></p>
+
+<div id="itt450">
+
+	<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Information and Network Security </td>
+			<td> Dr Fakariah Hani </td>
+	</table>
+
+</div>
+
+<p></p>
+<p></p>
+
+<div id="tac451">
+
+	<table>
+		<tr>
+			<th>Course name</th>
+			<th>Lecture's Name</th>
+		</tr>
+
+		<tr>	
+			<td> Introductory Arabic (Level II) </td>
+			<td> Sir Mohd Akashah </td>
+	</table>
+
+</div>
+
+	<div class="footer">
+
+ 		<h2><a href="index.html">Copyright@Nadzifah's Assignment</a></h2>
+
+</body>
+</html>

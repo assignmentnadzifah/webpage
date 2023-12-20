@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head
+
+    <title>My Personal Blog</title>
+
+ <!--back ground designing -->
+     
+    <style>
+     
+     body {
+	    background-image: url('image/background1.png');
+            background-size: cover;
+	    font-family: garamond;
+     }
+	h1 {
+		text-align:center;
+	}
+		
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #DDEAD1;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: underline overline dotted black;
+        }
+
+        li a:hover {
+            background-color: #C7DDB5;
+        }
+
+        .logo {
+            max-height: 60px;
+            margin-right: 0px; 
+	}
+	.icon {
+            max-height: 40px;
+            margin-right: 0px; 
+	}
+
+	.social-icon {
+            width: 30px; 
+            height: 30px; 
+            margin-right: 5px; 
+            vertical-align: middle;
+        }
+
+	.center {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	table{
+		boarder: 4px;
+		boarder-collapse: collapse;
+		width: 100%
+	}
+		
+	th,td{
+		boarder:1px solid black;
+		padding:8px;
+		text-align: center;
+	}
+	
+	th{
+		background-color:#89CFF0;
+	}
+	tr{
+		background-color:#DDEAD1;
+	}
+
+	.gallery{
+		border: 1px solid black;
+	}
+
+	.gallery:hover{
+		border: 1px solid #777;
+	}
+	
+	.gallery img{
+		width: 100%;
+		height: auto;
+	}
+
+	.desc{
+		padding: 15px;
+		text-align: center;	
+	}
+
+	.footer{
+		height: 40px;
+		background-color:#DDEAD1;
+		border-radius: 5px 5px 5px;
+	}
+	
+	.footer h2{
+		padding:5px;
+		text-align:center;	
+	}
+
+    </style>
+</head>
+<body>
+<!-- creating navigation bar-->
+<nav>
+    <ul>
+        <li><a href="index.html"><img src="image/logo.png" alt="Logo" class="logo"></a></li>
+        <li><a href="about.html" >About Me</a></li>
+	<li><a href="social.html">Social Media</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+	<li><a href="links.html">UiTM Website links</a></li>
+	<li><a href="https://www.youtube.com/" target="_blank"><img src="image/yt.png" alt="YouTube" class="icon"></a></li>
+	<li><a href="https://www.instagram.com/" target="_blank"><img src="image/Instagram.png" alt="Instagram" class = "icon"></a></li>
+        <li><a href="signin.html">Sign In</a></li>
+	<li><a href="signout.html">Sign Out</a></li>
+	
+    </ul>
+</nav>
+
+<!-- creating about me navigation-->
+
+<h1> This page is all about me</h1>
+
+	<h1> My personal detail</h1>
+	<table>
+	
+		<tr>
+			<td> My picture </td>
+			<td><a><img src="image/me.jpg" alt="Me" height="250" width="165"></a></td>
+		</tr>
+		
+		<tr> 
+			<td> My full name </td>
+			<td> Nurul Nadzifah Binti Zamzuri </td>
+		</tr>
+
+		<tr>
+			<td> My age is </td>
+			<td> 22</td>
+		</tr>
+
+		<tr>
+			<td> My birthday is</td>
+			<td> 04/07/2001</td>
+		</tr>
+	
+	</table>
+
+	<h1> My Academic detail</h1>
+	<table>
+		<tr>	
+			<td> Primary School</td>
+			<td> SK Subang Bestari</td>
+		</tr>
+
+		<tr>
+			<td> High School</td>
+			<td> SMIDE/SMK KD 10</td>
+		</tr >
+		<tr>
+			<td> Diploma </td>
+			<td> UiTM in statistics </td>
+	</table>
+		
+	<h1> END OF MY DETAILS</h1>
+</body>
+</html>

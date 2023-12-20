@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head
+
+    <title>My Personal Blog</title>
+
+ <!--back ground designing -->
+     
+    <style>
+     
+     body {
+	    background-image: url('image/background1.png');
+            background-size: cover;
+	    font-family: garamond;
+     }
+	h1 {
+		text-align:center;
+	}
+		
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #DDEAD1;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: underline overline dotted black;
+        }
+
+        li a:hover {
+            background-color: #C7DDB5;
+        }
+
+        .logo {
+            max-height: 60px;
+            margin-right: 0px; 
+	}
+	.icon {
+            max-height: 40px;
+            margin-right: 0px; 
+	}
+	
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	.slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+	.footer{
+		height: 40px;
+		background-color:#DDEAD1;
+		border-radius: 5px 5px 5px;
+	}
+	
+	.footer h2{
+		padding:5px;
+		text-align:center;	
+	}
+
+	.footer h2 a{
+		text-decoration:none;color:black;
+	}
+	
+    </style>
+</head>
+<body>
+<!-- creating navigation bar-->
+<nav>
+    <ul>
+        <li><a href="index.html"><img src="image/logo.png" alt="Logo" class="logo"></a></li>
+        <li><a href="about.html" >About Me</a></li>
+	<li><a href="social.html">Social Media</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+	<li><a href="links.html">UiTM Website links</a></li>
+	<li><a href="https://www.youtube.com/" target="_blank"><img src="image/yt.png" alt="YouTube" class="icon"></a></li>
+	<li><a href="https://www.instagram.com/" target="_blank"><img src="image/Instagram.png" alt="Instagram" class = "icon"></a></li>
+        <li><a href="signin.html">Sign In</a></li>
+	<li><a href="signout.html">Sign Out</a></li>
+	
+    </ul>
+</nav>
+
+<!-- creating image portion of gallery-->
+<h1> This is my Gallery</h1>
+<h2> this part is my pictures I have snaped</h2>
+	<div class="slideshor-container">
+  		<div class="mySlides">
+   			 <a target="_blank" href="image1.jpg">
+			<img src="image/image1.jpg" alt="sky view">
+    			</a>
+   		 <div class="desc">sky view from Uitm Shah Alam's sky</div>
+  		</div>
+
+ 	 	<div class="mySlides">
+   	 		<a target="_blank" href="image3.jpg">
+			<img src="image/image3.jpg" alt="sky view of enginering faculty">
+			</a>
+   	 	<div class="desc">sky view of enginering faculty</div>
+		</div>
+
+		<div class="mySlides">
+			    <a target="_blank" href="image6.jpg">
+      			    <img src="image/image6.jpg" alt="view">
+				</a>
+   		 <div class="desc">image of a view from hill in perlis</div>
+ 		 </div>
+
+		<div class="mySlides">
+				<a target="_blank" href="image5.jpg">
+				<img src="image/image5.jpg" alt="sunrise">
+ 				   </a>
+    			  	<div class="desc">PD sunrise</div>
+		</div>
+
+		<div class="mySlides">
+   				 <a target="_blank" href="image2.jpg">
+  			         <img src="image/image2.jpg" alt="rainy sky">
+  				  </a>
+				<div class="desc">UiTM Raub rainy sky</div>
+		</div>
+		<div class="mySlides">
+   				 <a target="_blank" href="image4.jpg">
+     				 <img src="image/image4.jpg" alt="sunset">
+    				 </a>
+				<div class="desc">PD sunset</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>	
+
+	</div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+<!-- creating video portion of gallery-->
+
+<h1> This is the videos portion of my Gallery<h1>
+
+	<div>
+		<a>
+		<video width="400" controls>
+      		<source src="image/vid1.mp4" type="video/mp4">
+      		Your browser does not support HTML5 video.
+    		</video>
+		</a>
+		<div class="desc">bimo sing</div>
+ 	</div>
+	<div>
+		<a>
+		<video width="400" controls>
+      		<source src="image/vid2.mp4" type="video/mp4">
+      		Your browser does not support HTML5 video.
+    		</video>
+		</a>
+		<div class="baby cat">my baby cat</div>
+ 	</div>
+	<div>
+		<a>
+		<video width="400" controls>
+      		<source src="image/vid3.mp4" type="video/mp4">
+      		Your browser does not support HTML5 video.
+    		</video>
+		</a>
+		<div class="desc">play ground</div>
+ 	</div>
+	<div>
+		<a>
+		<video width="400" controls>
+      		<source src="image/vid4.mp4" type="video/mp4">
+      		Your browser does not support HTML5 video.
+    		</video>
+		</a>
+		<div class="desc">raub sky</div>
+ 	</div>
+	<div>
+		<a>
+		<video width="400" controls>
+      		<source src="image/vid5.mp4" type="video/mp4">
+      		Your browser does not support HTML5 video.
+    		</video>
+		</a>
+		<div class="desc">raub sky</div>
+ 	</div>
+
+	<div class="footer">
+
+ 		<h2><a href="index.html">Copyright@Nadzifah's Assignment</a></h2>
+	</div>
+
+</body>
+</html>
